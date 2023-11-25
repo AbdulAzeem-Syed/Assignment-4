@@ -5,8 +5,9 @@
 package assignment.pkg4;
 
 /**
- *
+ * Base class to create objects for all the design patterns
  * @author Abdul
+ * @version 1.1
  */
 public class Assignment4 {
 

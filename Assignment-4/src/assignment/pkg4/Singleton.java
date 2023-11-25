@@ -5,18 +5,32 @@
 package assignment.pkg4;
 
 /**
- *
+ * Singleton class demonstrating the singleton design pattern
  * @author Abdul
+ * @version 1.1
  */
 public class Singleton {
     private static Singleton instance = new Singleton();
     
+    /**
+    *
+    * Singleton object constructor, kept as private to implement singleton pattern
+    */
     private Singleton (){}
     
+    /**
+    *
+    * Return the object instance of the singleton class
+    * @return the object instance of singleton
+    */
     public static Singleton getInstance() {
         return instance;
     }
     
+    /**
+    *
+    * Print the given message for the singleton class
+    */
     public void showMessage(){
         System.out.println("Singleton object printed");
     }
