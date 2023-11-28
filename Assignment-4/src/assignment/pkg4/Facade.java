@@ -28,24 +28,24 @@ public class Facade {
     *
     * Prints draw message for circle class in Facade class
     */
-    public void drawCircle(){
-        circle.draw();
+    public String drawCircle(){
+        return circle.draw();
     }
     
     /**
     *
     * Prints draw message for rectangle class in Facade class
     */
-    public void drawRectangle(){
-        rectangle.draw();
+    public String drawRectangle(){
+        return rectangle.draw();
     }
     
     /**
     *
     * Prints draw message for square class in Facade class
     */
-    public void drawSquare(){
-        square.draw();
+    public String drawSquare(){
+        return square.draw();
     }
 }
 
@@ -54,7 +54,7 @@ public class Facade {
 * Interface for implementing shape
 */
 interface FacadeShape {
-    void draw();
+    String draw();
 }
 
 /**
@@ -64,8 +64,8 @@ interface FacadeShape {
 class FacadeRectangle implements FacadeShape {
     
     @Override
-    public void draw() {
-        System.out.println("Facade rectangle printed");
+    public String draw() {
+        return "Facade rectangle printed";
     }
 }
 
@@ -76,8 +76,8 @@ class FacadeRectangle implements FacadeShape {
 class FacadeSquare implements FacadeShape {
     
     @Override
-    public void draw() {
-        System.out.println("Facade square printed");
+    public String draw() {
+        return "Facade square printed";
     }
 }
 
@@ -88,7 +88,7 @@ class FacadeSquare implements FacadeShape {
 class FacadeCircle implements FacadeShape {
     
     @Override
-    public void draw() {
-        System.out.println("Facade circle printed");
+    public String draw() {
+        return "Facade circle printed";
     }
 }

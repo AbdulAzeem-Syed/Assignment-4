@@ -11,6 +11,15 @@ package assignment.pkg4;
  */
 public class Singleton {
     private static Singleton instance = new Singleton();
+    private int number;
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
     
     /**
     *

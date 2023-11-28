@@ -4,6 +4,9 @@
  */
 package assignment.pkg4;
 
+import assignment.pkg4.Factory.Factory;
+import assignment.pkg4.Factory.FactoryShape;
+
 /**
  * Base class to create objects for all the design patterns
  * @author Abdul
@@ -20,19 +23,19 @@ public class Assignment4 {
         singleton.showMessage();
         
         Facade facade = new Facade();
-        facade.drawCircle();
-        facade.drawRectangle();
-        facade.drawSquare();
+        System.out.println(facade.drawCircle());
+        System.out.println(facade.drawRectangle());
+        System.out.println(facade.drawSquare());
         
         Factory factory = new Factory();
         FactoryShape factoryCircle = factory.getShape("CIRCLE");
-        factoryCircle.draw();
+        System.out.println(factoryCircle.draw());
         
         FactoryShape factoryRectangle = factory.getShape("RECTANGLE");
-        factoryRectangle.draw();
+        System.out.println(factoryRectangle.draw());
         
         FactoryShape factorySquare = factory.getShape("SQUARE");
-        factorySquare.draw();
+        System.out.println(factorySquare.draw());
     }   
     
 }

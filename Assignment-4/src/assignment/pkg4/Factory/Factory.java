@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package assignment.pkg4;
+package assignment.pkg4.Factory;
 
 /**
  * Factory class demonstrating the factory design pattern
@@ -14,7 +14,7 @@ public class Factory {
     *
     * Constructor for factory class
     */
-    Factory(){}
+    public Factory(){}
     /**
     *
     * Returns the respective object based on the given string
@@ -40,14 +40,6 @@ public class Factory {
 
 /**
 *
-* Interface for implementing shape
-*/
-interface FactoryShape {
-    void draw();
-}
-
-/**
-*
 * FactoryRectangle class implementing shape for the factory pattern
 */
 class FactoryRectangle implements FactoryShape {
@@ -56,8 +48,8 @@ class FactoryRectangle implements FactoryShape {
     * Prints draw message for square class in Factory class
     */
     @Override
-    public void draw() {
-        System.out.println("Factory rectangle printed");
+    public String draw() {
+        return "Factory rectangle printed";
     }
 }
 
@@ -71,8 +63,8 @@ class FactorySquare implements FactoryShape {
     * Prints draw message for square class in Factory class
     */
     @Override
-    public void draw() {
-        System.out.println("Factory square printed");
+    public String draw() {
+        return "Factory square printed";
     }
 }
 
@@ -86,7 +78,7 @@ class FactoryCircle implements FactoryShape {
     * Prints draw message for square class in Factory class
     */
     @Override
-    public void draw() {
-        System.out.println("Factory circle printed");
+    public String draw() {
+        return "Factory circle printed";
     }
 }
