@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit4TestClass.java to edit this template
  */
 
-import assignment.pkg4.Singleton;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -15,9 +14,9 @@ import static org.junit.Assert.*;
  *
  * @author Abdul
  */
-public class SingletonTest {
+public class AtRestTest {
     
-    public SingletonTest() {
+    public AtRestTest() {
     }
     
     @BeforeClass
@@ -40,11 +39,8 @@ public class SingletonTest {
     // The methods must be annotated with annotation @Test. For example:
     //
     @Test
-    public void SingletonObjectTest() {
-        Singleton instance1 = Singleton.getInstance();
-        instance1.setNumber(100);
-        Singleton instance2 = Singleton.getInstance();
-        //will be successfull if the instances are same
-        assertEquals(instance1.getNumber(),instance2.getNumber());
+    public void atRestLeftPedalTest() {
+            AtRest a = new AtRest();
+            assertTrue(a.pressLeftPedalForTime(5));	
     }
 }
