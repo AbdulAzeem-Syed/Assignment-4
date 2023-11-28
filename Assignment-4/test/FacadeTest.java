@@ -42,18 +42,18 @@ public class FacadeTest {
     @Test
     public void factorySquareTest() {
         Facade facade = new Facade();
-        assertEquals(facade.drawSquare(),"Facade square printed");
+        assertEquals("Facade square printed", facade.drawSquare());
     }
     
     @Test
     public void factoryRectangleTest() {
         Facade facade = new Facade();
-        assertEquals(facade.drawRectangle(),"Facade rectangle printed");
+        assertEquals("Facade rectangle printed", facade.drawRectangle());
     }
     
     @Test
     public void factoryCircleTest() {
         Facade facade = new Facade();
-        assertEquals(facade.drawCircle(),"Facade circle printed");
+        assertEquals("Facade circle printed",facade.drawCircle());
     }
 }

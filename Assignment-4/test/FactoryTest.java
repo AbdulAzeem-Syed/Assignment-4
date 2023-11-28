@@ -44,20 +44,20 @@ public class FactoryTest {
     public void factorySquareTest() {
         Factory factory = new Factory();
         FactoryShape factorySquare = factory.getShape("SQUARE");
-        assertEquals(factorySquare.draw(),"Factory square printed");
+        assertEquals("Factory square printed",factorySquare.draw());
     }
     
     @Test
     public void factoryRectangleTest() {
         Factory factory = new Factory();
         FactoryShape factorySquare = factory.getShape("RECTANGLE");
-        assertEquals(factorySquare.draw(),"Factory rectangle printed");
+        assertEquals("Factory rectangle printed",factorySquare.draw());
     }
     
     @Test
     public void factoryCircleTest() {
         Factory factory = new Factory();
         FactoryShape factorySquare = factory.getShape("CIRCLE");
-        assertEquals(factorySquare.draw(),"Factory circle printed");
+        assertEquals("Factory circle printed",factorySquare.draw());
     }
 }
