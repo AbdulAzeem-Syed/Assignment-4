@@ -27,6 +27,7 @@ public class Facade {
     /**
     *
     * Prints draw message for circle class in Facade class
+    * @return draw string
     */
     public String drawCircle(){
         return circle.draw();
@@ -35,6 +36,7 @@ public class Facade {
     /**
     *
     * Prints draw message for rectangle class in Facade class
+    * @return draw string
     */
     public String drawRectangle(){
         return rectangle.draw();
@@ -43,6 +45,7 @@ public class Facade {
     /**
     *
     * Prints draw message for square class in Facade class
+    * @return draw string
     */
     public String drawSquare(){
         return square.draw();

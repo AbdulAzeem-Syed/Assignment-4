@@ -5,8 +5,9 @@
 package assignment.pkg4.Factory;
 
 /**
+ * Interface for implementing shape
 *@author Abdul
-* Interface for implementing shape
+*
 */
 public interface FactoryShape {
     String draw();

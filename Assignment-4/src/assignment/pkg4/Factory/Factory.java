@@ -46,6 +46,7 @@ class FactoryRectangle implements FactoryShape {
     /**
     *
     * Prints draw message for square class in Factory class
+    * @return draw string
     */
     @Override
     public String draw() {
@@ -61,6 +62,7 @@ class FactorySquare implements FactoryShape {
     /**
     *
     * Prints draw message for square class in Factory class
+    * @return draw string
     */
     @Override
     public String draw() {
@@ -76,6 +78,7 @@ class FactoryCircle implements FactoryShape {
     /**
     *
     * Prints draw message for square class in Factory class
+    * @return draw string
     */
     @Override
     public String draw() {
